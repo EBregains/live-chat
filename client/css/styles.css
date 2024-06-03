@@ -5,7 +5,7 @@
 }
 
 html {
-  color-scheme: light dark;
+  color: #FFF;
 }
 
 body {
@@ -135,7 +135,7 @@ aside {
 
 #users_list {
   list-style-type: none;
-  margin: 0;
+  margin: 1rem 0;
   padding: 0;
 }
 
@@ -173,4 +173,18 @@ aside {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+@media screen and (max-width: 800px) {
+
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 7fr 1fr;
+    min-height: 100vh;
+    max-height: auto;
+  }
+
+  h1 {
+    margin-inline: 1rem;
+  }
 }
